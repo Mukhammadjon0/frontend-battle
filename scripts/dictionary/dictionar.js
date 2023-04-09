@@ -3,7 +3,7 @@ let signInCheckDictionary = document.getElementById("dictionary");
 if (localStorage.getItem("login") !== "true") {
   signInCheckDictionary.style.display = "none";
   window.location.assign(
-    "http://www.notiqlik-markazi.uz/pages/signup/signup.html"
+    "https://6432ee33f7271a4ad1cfd097--gentle-sable-0b8e40.netlify.app/pages/signup/signup.html"
   );
 }
 
