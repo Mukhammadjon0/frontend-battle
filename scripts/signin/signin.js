@@ -67,6 +67,6 @@ signinBtn.addEventListener("click", () => {
 
 const signInSuccesNavigate = () => {
   window.location.assign(
-    "http://www.notiqlik-markazi.uz/pages/test-game/dictionarygame.html"
+    "https://6432ee33f7271a4ad1cfd097--gentle-sable-0b8e40.netlify.app/pages/test-game/dictionarygame.html"
   );
 };
