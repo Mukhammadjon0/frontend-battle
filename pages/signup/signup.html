@@ -1,53 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign up</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-    <link rel="stylesheet" href="../../assets/styles/signup/signup.css">
-</head>
-<body>
-    
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <link rel="stylesheet" href="../../assets/styles/signup/signup.css" />
+  </head>
+  <body>
     <section id="signup">
-        <div class="container">
-
-           <div class="sigp-up-index">
-            <div class="signup-container">
-                <div class="sign-up-title">
-                    <h2>Ro'yhatdan o'tish</h2>
-                </div>
-    
-                <form onsubmit="return false" id="signup-stop-one">
-                    <input type="text" required class="stop-one-name" placeholder="Ismingiz kiriting">
-                    <input type="email" required class="stop-one-email" placeholder="Emailingizni kiriting">
-                    <button class="sign-up-next" id="sign-up-next">Keyingisi</button>
-                </form>
-
-                <form onsubmit="return false" id="signup-stop-two">
-                    <input type="password" required class="step-two-password1" min="8" placeholder="Parolni kiriting">
-                    <input type="password" required class="step-two-password2" min="8" placeholder="Parolni takrorlang">
-                    <button type="submit" class="sign-up-btn" id="sign-up-next"><a >Ro'yhatdan o'tish</a></button>
-                </form>
-
-                <p class="akk-sign-in-text">Akkountingiz bormi? <a href="../signin/signin.html"> Unda Akkauntingizga kiring</a></p>
-               </div>
-           </div>
+      <div class="container">
+        <div class="sigp-up-index">
+          <div class="signup-container">
+            <div class="sign-up-title">
+              <h2>Ro'yhatdan o'tish</h2>
+            </div>
+            <form onsubmit="return false" id="signup-stop-one">
+              <input
+                type="text"
+                required
+                class="stop-one-name"
+                placeholder="Ismingiz kiriting"
+              />
+              <input
+                type="email"
+                required
+                class="stop-one-email"
+                placeholder="Emailingizni kiriting"
+              />
+              <button class="sign-up-next" id="sign-up-next">Keyingisi</button>
+            </form>
+            <form onsubmit="return false" id="signup-stop-two">
+              <input
+                type="password"
+                required
+                class="step-two-password1"
+                min="8"
+                placeholder="Parolni kiriting"
+              />
+              <input
+                type="password"
+                required
+                class="step-two-password2"
+                min="8"
+                placeholder="Parolni takrorlang"
+              />
+              <button type="submit" class="sign-up-btn" id="sign-up-next">
+                <a>Ro'yhatdan o'tish</a>
+              </button>
+            </form>
+            <p class="akk-sign-in-text">
+              Akkountingiz bormi?
+              <a href="../signin/signin.html"> Unda Akkauntingizga kiring</a>
+            </p>
+          </div>
         </div>
+      </div>
     </section>
-
-
-
     <div class="animation-boxs">
-        <div class="animation-box"></div>
-        <div class="animation-box"></div>
+      <div class="animation-box"></div>
+      <div class="animation-box"></div>
     </div>
-
-
     <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js" integrity="sha512-RX/OFugt/bkgwRQg4B22KYE79dQhwaPp2IZaA/YyU3GMo/qY7GrXkiG6Dvvwnds6/DefCfwPTgCXnaC6nAgVYw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"
+      integrity="sha512-RX/OFugt/bkgwRQg4B22KYE79dQhwaPp2IZaA/YyU3GMo/qY7GrXkiG6Dvvwnds6/DefCfwPTgCXnaC6nAgVYw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="../../scripts/signup/signup.js"></script>
-    
-</body>
+  </body>
 </html>

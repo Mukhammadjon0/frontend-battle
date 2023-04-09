@@ -1,24 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dictionary Game</title>
-    <link rel="stylesheet" href="../../assets/styles/dictionary/dictionary.css">
-</head>
-<body>
-    
+        <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../assets/styles/dictionary/dictionary.css"
+    />
+  </head>
+  <body>
     <section id="dictionary">
+      <div class="container">
+        <div class="select-types">
+          <button id="easy-test">Easy</button>
+          <button id="medium-test">Medium</button>
+          <button id="hard-test">Hard</button>
+        </div>
+        <div class="check-btn-container">
+            <button id="checkTestBtn">Topshirish</button>
+        </div>
+      </div>
+    </section>
+    
+
+    <section>
         <div class="container">
-            <button>Easy</button>
-            <button>Medium</button>
-            <button>Hard</button>
+            <div id="word-container" class="word-container"></div>
         </div>
     </section>
 
-    
 
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+     <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"
+      integrity="sha512-RX/OFugt/bkgwRQg4B22KYE79dQhwaPp2IZaA/YyU3GMo/qY7GrXkiG6Dvvwnds6/DefCfwPTgCXnaC6nAgVYw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
     <script src="../../scripts/dictionary/dictionar.js"></script>
-</body>
+  </body>
 </html>

@@ -1,16 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/">
-    <title>Online eng education</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/grid.css" />
+    <link rel="stylesheet" href="./assets/css/fonts.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Front_Battle</title>
+    <style>
+      .fsb-button {
+        padding: unset !important;
+      }
 
+      [data-value] {
+        position: relative;
+      }
 
+      [data-value]::after {
+        content: "";
+        position: absolute;
+        left: 7px;
+        margin-right: 7px;
+        width: 29px;
+        height: 19px;
+      }
 
-    <script src="scripts/script.js"></script>
-</body>
+      [data-value="uz"]::after {
+        background-position: center;
+        bottom: calc(28%);
+        -webkit-background-size: 100% 100% !important;
+        -moz-background-size: 100% 100% !important;
+        -o-background-size: 100% 100% !important;
+        background-size: 100% 100% !important;
+        background: url("./assets/svg/uzbekistn.svg") no-repeat;
+      }
+      [data-value="en"]::after {
+        background-position: center;
+        bottom: -webkit-calc(26%);
+        bottom: -moz-calc(26%);
+        bottom: calc(26%);
+        -webkit-background-size: 100% 100% !important;
+        -moz-background-size: 100% 100% !important;
+        -o-background-size: 100% 100% !important;
+        background-size: 100% 100% !important;
+        background: url("./assets/svg/united.svg") no-repeat;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <div class="row justify-between align-center">
+          <div class="col-5">
+            <div class="logo">
+              <img src="./assets/svg/Group 66.svg" alt="" />
+            </div>
+          </div>
+          <div id="myNav" class="col-7 d_none">
+            <i onclick="closeNav()" class="fa-solid fa-xmark"></i>
+            <div class="row align-center justify-end f_derc">
+              <div class="col-auto">
+                <button class="btn btn-blue">O'yinni boshlash</button>
+              </div>
+              <div class="col-auto">
+                <a href="./pages/signup/signup.html">
+                  <button class="btn btn-outl">
+                    Kirish
+                  </button>
+                </a>
+              </div>
+              <div class="col-auto">
+                <div class="lang row align-center">
+                  <!-- <i class="fa-solid fa-globe"></i> -->
+                  <select id="lang">
+                    <option value="uz">O'zbekcha</option>
+                    <option value="en">English</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-auto">
+            <div class="menuBar">
+              <i
+                onclick="openNav()"
+                class="fa-sharp fa-solid fa-bars-staggered"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header>
+      <div class="container">
+        <div class="row align-center">
+          <div class="col-6 col-xl-6 col-sm-12">
+            <img class="def_none" src="./assets/img/child.png" alt="" />
+            <h1>
+              Biz bilan ingliz tilini so'z yodlashlar bilan o'rganing !
+            </h1>
+            <div class="btns">
+              <!-- <button class="btn">O'zingizni sinab ko'ring</button> -->
+              <button class="btn button-wiggle">
+                O'zingizni sinab ko'ring
+              </button>
+              <button class="btn">Ro'yxatdan o'tish</button>
+            </div>
+          </div>
+          <div class="col-6 col-xl-6 col-sm-12">
+            <img class="sm_none" src="./assets/img/child.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="aboutUs">
+      <div class="container">
+        <div class="row align-center justify-center">
+          <div class="col-6 col-sm-12">
+            <div class="card">
+              <h1>Fintechhub jamosi haqida...</h1>
+              <p>
+                Bizning Fintech innovation hub IT jamosi bolib. Bizning
+                kompaniyamiz hozirda talabgir bo’lgan kasb hisoblanuvchi
+                dasturlashning va ingliz tilini turli ko’rinishlaridan
+                o’quvchilarga sifatli ta’lim berish bilan shug’ullanuvchi IT
+                o’quv markaz hisoblanadi.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row align-center justify-between">
+          <div class="col-3 col-sm-12">
+            <div class="logo">
+              <img src="./assets/svg/Group 65.svg" alt="" />
+            </div>
+          </div>
+          <div class="col-6 col-sm-12">
+            <div class="card">
+              <h1 class="us">Biz bilan bog’lanish</h1>
+              <p>
+                Toshkent shahar, Chilonzor tumani, <br />
+                Davlat xizmatlari Bunyodkor kochasi 7a
+              </p>
+              <h2>+ 998 71 203 88 00</h2>
+            </div>
+          </div>
+          <div class="col-3 col-sm-12">
+            <div class="net">
+              <a href="https://t.me/fintechhubuz">
+                <img src="./assets/svg/Group 61.svg" alt="network" />
+              </a>
+              <a href="">
+                <img src="./assets/svg/Group 62.svg" alt="network" />
+              </a>
+              <a href="">
+                <img src="./assets/svg/Group 60.svg" alt="network" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
