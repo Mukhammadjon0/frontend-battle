@@ -451,3 +451,5 @@ function closeNav() {
 }
 
 //   navbar menu
+
+// translate js
